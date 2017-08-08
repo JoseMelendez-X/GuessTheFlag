@@ -12,8 +12,28 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //When the view loads add these countries to the array of countries
+        countries.append("Estonia")
+        countries.append("france")
+        countries.append("germany")
+        countries.append()
+        
+        
     }
+    
+    //IB-Outlets
+    @IBOutlet weak var button1: UIButton!
 
+    @IBOutlet weak var button2: UIButton!
+    
+    @IBOutlet weak var button3: UIButton!
+    
+    
+    //Countries
+    var countries = [String]()
+
+    //Player score
+    var score = 0
 }
 
