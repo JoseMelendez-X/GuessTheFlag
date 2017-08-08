@@ -28,27 +28,27 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GPQ-lS-RCu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vo-49-oNg">
-                                <rect key="frame" x="87" y="230" width="200" height="100"/>
-                                <state key="normal" image="us"/>
-                                <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zez-7D-GRu"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klQ-Ta-roi">
-                                <rect key="frame" x="87" y="360" width="200" height="100"/>
+                                <rect key="frame" x="87" y="438" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0mi-RN-Glk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vo-49-oNg">
+                                <rect key="frame" x="87" y="265" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zez-7D-GRu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="klQ-Ta-roi" firstAttribute="top" secondItem="9vo-49-oNg" secondAttribute="bottom" constant="30" id="4IP-ii-8l1"/>
+                            <constraint firstItem="klQ-Ta-roi" firstAttribute="top" secondItem="9vo-49-oNg" secondAttribute="bottom" constant="73" id="4IP-ii-8l1"/>
                             <constraint firstItem="hqc-tt-Wab" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AO0-A8-6SH"/>
                             <constraint firstItem="9vo-49-oNg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jnr-hQ-wed"/>
-                            <constraint firstItem="9vo-49-oNg" firstAttribute="top" secondItem="hqc-tt-Wab" secondAttribute="bottom" constant="30" id="L8w-N4-npr"/>
+                            <constraint firstItem="9vo-49-oNg" firstAttribute="top" secondItem="hqc-tt-Wab" secondAttribute="bottom" constant="65" id="L8w-N4-npr"/>
                             <constraint firstItem="hqc-tt-Wab" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="fG3-Al-c9e"/>
                             <constraint firstItem="klQ-Ta-roi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hsw-x9-KJF"/>
                         </constraints>
