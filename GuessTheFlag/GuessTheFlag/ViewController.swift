@@ -14,7 +14,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //Countries
+    var countries = [String]()
     
+    //Player score
+    var score = 0
+    
+    //Correct answer
+    var correctAnswer = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,12 +78,20 @@ class ViewController: UIViewController {
         
         countries = GKRandomSource().arrayByShufflingObjects(in: countries) as! [String]
         
+        //Set the buttons to an image of a flag
+        
         button1.setImage(UIImage(named: countries[0]), for: .normal)
         
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
+        //Generate a random number between 0 - 2
+        correctAnswer = GKRandomSource.sharedRandom().nextInt(upperBound: 3)
+        
+        //Change the title of the navigation bar
+        title = countries[correctAnswer].uppercased()
+    
     }
     
     //IB-Outlets
@@ -86,11 +101,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var button3: UIButton!
     
+    //IB-Actions
     
-    //Countries
-    var countries = [String]()
-
-    //Player score
-    var score = 0
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        
+    }
+    
 }
 
